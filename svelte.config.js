@@ -15,8 +15,7 @@ const config = {
 			entries: ['*']
 		},
 		paths: {
-			relative: true,
-			base: dev ? '' : process.env.VITE_BASE_PATH ?? ''
+			base: dev ? '' : '/friendsgiving2025'
 		},
 		alias: {
 			$components: 'src/lib/components',
