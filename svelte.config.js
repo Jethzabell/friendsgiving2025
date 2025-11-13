@@ -9,7 +9,8 @@ const config = {
 
 	kit: {
 		adapter: adapter({
-			strict: false
+			strict: false,
+			fallback: 'index.html'
 		}),
 		prerender: {
 			entries: ['*']
