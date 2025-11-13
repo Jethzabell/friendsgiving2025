@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { onDestroy, onMount } from 'svelte';
+	import { base } from '$app/paths';
 	import Countdown from '$components/Countdown.svelte';
 	import AttendeesTable from '$components/AttendeesTable.svelte';
 	import DishCard from '$components/DishCard.svelte';
@@ -303,7 +304,7 @@
 		<!-- Mobile Image -->
 		<div class="lg:hidden overflow-hidden rounded-2xl shadow-xl ring-1 ring-black/5">
 			<img
-				src="/cover.jpg"
+				src="{base}/cover.jpg"
 				alt="Friends sharing a cozy candlelit meal"
 				class="w-full h-48 sm:h-64 object-cover"
 				loading="eager"
@@ -378,7 +379,7 @@
 				<div class="relative hidden lg:block">
 					<div class="absolute inset-0 rounded-2xl bg-white/10 backdrop-blur-sm"></div>
 					<img
-						src="/cover.jpg"
+						src="{base}/cover.jpg"
 						alt="Friends sharing a cozy candlelit meal"
 						class="relative h-full w-full rounded-2xl object-cover shadow-2xl"
 						loading="lazy"
